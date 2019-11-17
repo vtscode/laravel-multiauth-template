@@ -11,15 +11,19 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
+
+
+
 ```sh
-$ composer install
-$ php artisan migrate:fresh
-$ php artisan multiauth:seed --role=super
-$ php artisan multiauth:role editor
-$ php artisan multiauth:role publisher
-$ php artisan multiauth:make {guard}   ==> for make another auth, change {guard} with e.g. student or what
-$ php artisan multiauth:rollback {guard} ==> delete all another auth, change {guard} with e.g. student or what
-$ php artisan serve --port=8000
+#!/bin/sh
+composer install
+php artisan migrate:fresh
+php artisan multiauth:seed --role=super
+php artisan multiauth:role editor 
+php artisan multiauth:role publisher
+php artisan multiauth:make {guard}  # ==> for make another auth, change {guard} with e.g. student or what
+php artisan multiauth:rollback {guard} #==> delete all another auth, change {guard} with e.g. student or what
+php artisan serve --port=8000
 
 ```
 
